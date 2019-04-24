@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eeeee</title>
+</head>
+<body>
+	<form method="get" accept-charset="utf-8">
+		<input type="text" id="input1" name="">
+		<input type="text" id="input2" name="">
+		<br>
+		<br>
+		<input type="button" onclick="addition()" value="Addition(+)">
+		<input type="button" onclick="subtraction()" value="Subtraction(-)">
+		<input type="button" onclick="multiplication()" value="Multiplication(X)">
+		<input type="button" onclick="division()" value="Division(/)">
+		<p id="demo"></p>
+	</form>
+
+	<script>
+		function addition() {
+			let input1 = document.getElementById('input1').value;
+			let input2 = document.getElementById('input2').value;
+
+			let inputsss1 = parseInt(input1);
+			let inputsss2 = parseInt(input2);
+
+			let result = inputsss1 + inputsss2;
+
+			document.getElementById('demo').innerHTML = "Addition: " + result;
+		};
+
+		function subtraction() {
+			let input1 = document.getElementById('input1').value;
+			let input2 = document.getElementById('input2').value;
+
+			let inputsss1 = parseInt(input1);
+			let inputsss2 = parseInt(input2);
+
+			let result = inputsss1 - inputsss2;
+
+			document.getElementById('demo').innerHTML = "Subtraction: " + result;
+		};
+ 
+		function multiplication() {
+			let input1 = document.getElementById('input1').value;
+			let input2 = document.getElementById('input2').value;
+
+			let inputsss1 = parseInt(input1);
+			let inputsss2 = parseInt(input2);
+
+			let result = inputsss1 * inputsss2;
+
+			document.getElementById('demo').innerHTML = "Multiplication: " + result;
+		};
+
+		function division() {
+			let input1 = document.getElementById('input1').value;
+			let input2 = document.getElementById('input2').value;
+
+			let inputsss1 = parseInt(input1);
+			let inputsss2 = parseInt(input2);
+
+			let result = inputsss1 / inputsss2;
+			
+			document.getElementById('demo').innerHTML = "Division: " + result;
+		};
+	</script>
+</body>
+</html>
